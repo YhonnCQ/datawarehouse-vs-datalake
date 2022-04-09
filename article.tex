@@ -69,12 +69,24 @@
 \selectlanguage{spanish} 
 \begin{abstract}
 \noindent 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus molestie. 
+Cada día se generan enormes cantidades de datos procedentes de las tecnologías digitales y los sistemas de
+información. Por ello, el tratamiento de estos datos masivos requiere una arquitectura específica y un buen
+conocimiento de cómo manejar los datos. Los sistemas tradicionales de gestión de bases de datos ya no pueden
+utilizarse para este tipo de datos, ya que fueron diseñados originalmente para datos limitados y estructurados. Por
+otra parte, se ha desarrollado una arquitectura específica conocida como Data Lake con el fin de extraer información
+valiosa oculta en los datos. El objetivo principal de este artículo es explorar las dos arquitecturas, a saber, el almacén
+de datos y el lago de datos. Además, describe las principales diferencias y expone los factores clave de cada una.
 \end{abstract}
 \selectlanguage{english} 
 \begin{abstract}
 \noindent 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus molestie. 
+Each day huge quantities of data are generated from digital technologies and information systems. Therefore,
+processing these massive data requires a specific architecture and a good knowledge on how to handle data.
+Traditional databases management system can no longer be used for this type of data since they were originally
+designed for limited and structured data. Moreover, dedicated architecture known as Data Lake has been developed
+in order to extract valuable information hidden in data. The main objective of this paper is to explore the two
+architectures, namely, data warehouse and data lake. Furthermore, it describes the main differences and exposes
+key factors of each one. 
 \end{abstract}
 }
 
@@ -91,8 +103,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus 
 
 \section{Introduction}
 
-\lettrine[nindent=0em,lines=3]{L}orem ipsum dolor sit amet, consectetur adipiscing elit.
-Morbi vulputate tempus molestie.
+\lettrine[nindent=0em,lines=3]{R}elational Databases or RDBMS played a key role in making data management
+mainstream. They are good with highly structured, low quantity data of the pre-internet era. The advent of the
+internet coincided with the ambitions of large organizations to incorporate a 360-degree view of their customer
+database. This led to a new type of storage destination known as Data Warehouses. Today, even this storage
+destination has a smaller subset, popularly known as Data Lakes. When it comes to the field of Database
+Storage, the Data Warehouse vs Data Lake question is a relatively tough choice.\\
+
+Even today very few people understand the differences between these 2 types of storage.  Although Data
+Warehouses are good at handling structured Big Data, companies quickly realized that the Data Warehouses
+might not cater to the rising demand for insights into unstructured data. The 21st century witnessed a deluge
+of data collection by organizations not only from internal sources but also from public repositories. They
+needed a technology that could complement the capabilities of Data Warehouses, an extension that can
+facilitate the immense unstructured aspect of Big Data. As a result, Data Lakes came into existence.
+In this article we are going to explore both, Data Lakes and Warehouses, unfold their key differences and discuss
+their usage in the context of an organization.
+
 
 %----------------------------------------------------------------------------------------
 %	State of Art
@@ -197,6 +223,46 @@ Data Warehousing requires the support of several different types of technology\c
 	
 \end{itemize}
 
+\subsection{Data Warehouse Examples}
+In general, DWH is implemented in companies that handle large volumes of data related to customers, products
+or transactions. Among the sectors that make use of this tool, the following can be mentioned:
+
+\subsubsection{DWH in the telecom sector}
+The world of telecommunications is extremely dynamic and competitive. For this reason, organizations resort to
+tools that allow them to study their internal productivity, the market, its changes and behaviors in the face of
+new technologies.\\
+
+Therefore, telecommunications companies use data warehouses to store the data of millions of customers. This
+involves the backup of invoices, services used, records of calls made, equipment sold, among others. All this
+information is very useful for activities such as:
+
+\begin{itemize}	
+	
+	\item The design of marketing strategies
+	\item Audits in the operations area
+	\item Service delivery analysis
+	\item Forecasts of risks of customer leakage and others
+	
+\end{itemize}
+
+\subsubsection{DWH in the mass consumer sector}
+Companies implement data warehousing to stay competitive in the market. In this way they can predict, for
+example, the amount of production they will need to meet demand in a given time range.\\
+
+Retail chains can also share certain accesses to their data warehouses with their suppliers. This will give
+manufacturers information related to the supply of products and their sale to the end consumer.\\
+
+This whole process allows coordinating management between producers and stores, in addition to accessing
+data that is decisive for the development of marketing campaigns.
+
+\subsubsection{DWH in the transport sector}
+In both the travel and distribution sectors, the use of DWH is an excellent tool for storing customer
+information, most frequented destinations, freight management, luggage tracking, among others.\\
+
+Thus, data such as travel reservations to a certain destination, or delivery times of orders, will allow the
+development of analysis for the creation of promotions or for diagnostics of the organization's logistics processes.
+
+
 \subsection{Datalake}
 A data lake is a scalable storage and analysis system for data of any type, retained in their native format and used
 mainly by data specialists (statisticians, data scientists or analysts) for knowledge extraction. Its characteristics include\cite{sawadogo2021data}:
@@ -259,8 +325,12 @@ students\cite{Victoria2021}.
 \section{Conclusions}
 \begin{itemize}	
 	
-	\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus molestie.
-	\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus molestie.
+	\item There’s no better way to choose which data storage platform best fits your company than to evaluate it based on
+	your needs and business operation.
+	\item Furthermore, data lakes and data warehouses are two inseparable components that are extremely effective when
+	both are utilized well.
+	\item Not to mention, data lakes are becoming more and more user-friendly while data warehouses continue to prove
+	their worth in terms of data analysis and reporting.
 
 \end{itemize}
 
